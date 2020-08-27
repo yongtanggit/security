@@ -9,7 +9,7 @@ from scapy.all import *
 
 def usage():
     print('''Usage: l4_scapy_host.py
-Usage: l4_scapy_host.py network''')
+Usage: l4_scapy_host.py network-prefix''')
 
 ## Validate Input
 num=len(sys.argv)
@@ -19,6 +19,7 @@ elif num == 1:
    prefix = input('Network Prefix:')
 else:
    usage()
+   exit()
 
 ## Probe Network
 for host in range(1,255):
