@@ -9,7 +9,7 @@ import time
 from scapy.all import *
 
 def usage():
-    print('''USAGE: l4_scapy_port IP start-port-number end-port-number''')
+    print('USAGE: ', sys.argv[0], ' IP start-port-number end-port-number')
 
 num=len(sys.argv)
 
