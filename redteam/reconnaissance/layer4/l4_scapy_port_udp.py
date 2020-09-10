@@ -24,9 +24,7 @@ else:
 for p in range(pst,ped):
     a=sr1(IP(dst=ip)/UDP(dport=p),timeout=2,verbose=0)
     time.sleep(1)
-    if a is not None:
-       continue
-    else:
+    if a is None:
        print(p)
        
 
