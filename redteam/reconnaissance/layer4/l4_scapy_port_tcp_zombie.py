@@ -3,9 +3,6 @@
 ## This program performs idel scan(zombie scan). 
 ## It tests whether a host is a good zombie first before an indle scan.  
 
-import time
-
-import sys
 
 from scapy.all import *
 
@@ -54,7 +51,7 @@ def scan():
 check(10)
 
 # Call the scanner 
-#scan()
+scan()
 
 
 
