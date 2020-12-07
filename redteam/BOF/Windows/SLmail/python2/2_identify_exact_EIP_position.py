@@ -1,4 +1,8 @@
-#! /usr/bin/python 
+#! /usr/bin/python
+
+# This code is an exploit for second step of the BOF attack to SLmail 5.0.
+# It detects assit to detect the position of EIP register.
+# It sends a unique pattern string(4700 bytes) to the target.     
 
 import socket
 

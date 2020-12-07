@@ -1,4 +1,8 @@
 #! /usr/bin/python 
+
+# This code is the last steop of BOF attack to SLmail 5.0
+# It sends shellcode to the targart to get a reverse shell. 
+
 import socket 
 
 
