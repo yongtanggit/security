@@ -4,17 +4,16 @@ $SearchString = "LDAP://"
 $SearchString += $PDC + "/"
 $DistinguishedName = "DC=$($domainObj.Name.Replace('.', ',DC='))"
 $SearchString += $DistinguishedName
-$SearchString += $DistinguishedName
 $Searcher = New-Object System.DirectoryServices.DirectorySearcher([ADSI]$SearchString)
 $objDomain = New-Object System.DirectoryServices.DirectoryEntry
 $Searcher.SearchRoot = $objDomain
-$Searcher.filter="samAccountType=805306368"
+$search.filter="samAcconutType=805306369"
 $Result = $Searcher.FindAll()
 Foreach($obj in $Result)
 {
-   Foreach($prop in $obj.Properties)
-  {
-     $prop
-  }
-   Write-Host "------------------------"
+  Foreach($prop in $obj.Properties)
+{
+  $prop
+}
+  Write-Host "------------------------"
 }
